@@ -2,6 +2,8 @@ $font: 'Poppins', sans-serif;
 $mainColor: #518581;
 $line_color: #F3F3F3;
 $paragraphColor: #AFADB5;
+$secondaryColor: #FFB23F;
+$blackColor: #151411;
 
 @mixin fonts-setting($font-weigth, $font-size, $color) {
     font-weight: $font-weigth;
@@ -162,4 +164,44 @@ body {
         }
 
     }
+}
+
+.wrapper {
+    .main {
+        .section-benefits {
+            height: 643px;
+            
+            .section-benefits_small-text {
+                @include fonts-setting(700, 18px, $secondaryColor);
+                display: inline-block;
+                margin-bottom: 14px;
+                
+            }
+            .section-benefits__title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+                .section-benefits__title_h2 {
+                    @include fonts-setting(700, 44px, $blackColor);
+                    line-height: 1.3;
+                    display: flex;
+                    justify-content: flex-start;
+                    max-width: 456px
+                    
+                    
+                    
+                }
+                .section-benefits__title_desc {
+                    @include fonts-setting(500, 18px, $paragraphColor);
+                    line-height: 1.8;
+                    display: flex;
+                    max-width: 505px;
+                    justify-content: flex-start;
+                    
+                }
+            }
+        }
+    }
+    
 }
