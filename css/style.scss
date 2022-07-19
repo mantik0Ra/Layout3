@@ -32,6 +32,7 @@ body {
 
     .nav {
         width: 100%;
+        background-color: #fff;
         min-height: 120px;
         margin-bottom: 100px;
         display: flex;
@@ -273,16 +274,18 @@ body {
     width: 100%;
     display: flex;
     gap: 29px;
+    margin-bottom: 180px;
 
 }
 .section-popular_content_card {
     width: 100%;
+    position: relative;
     
     
 }
 
 .section-popular_content_card_img {
-    width: 100%;
+    min-width: 100%;
     max-height: 360px;
     margin-bottom: 26px;
 
@@ -306,7 +309,7 @@ body {
     @include fonts-setting(500, 18px, $paragraphColor);
     line-height: 1.8;
     margin-bottom: 18px;
-    display: block
+    display: block;
 }
 
 .section-popular_content_card_cost {
@@ -324,28 +327,24 @@ body {
     
 }
 
-.section-popular_btn-right {
-    position: relative;
-    right: 0;
-    left: 1800px;
-    bottom: 300px;
+.section-popular_btn-left-absolute {
+    position: absolute;
+    left: 55px;
+    bottom: inherit;
+    top: 248px;
+    
+}
+
+.section-popular_btn-right-absolute {
+    position: absolute;
+    right: 52px;
+    bottom: inherit;
+    top: 248px;
+    
+}
+
+.section-popular_btn:hover {
     cursor: pointer;
-    
-}
-
-.section-popular_btn-left {
-    position:relative;
-    bottom: 300px;
-    cursor: pointer;
-    
-}
-
-.section-popular_btn-left:hover {
-    animation: btn 1s forwards linear;
-}
-
-.section-popular_btn-right:hover {
-    
     animation: btn 1s forwards linear;
 }
 
@@ -357,6 +356,178 @@ body {
         opacity: 1;
     }
 }
+
+// --------------------------------------section_info---------------------------------------
+
+.section-info {
+    max-height: 864px;
+    margin-bottom: 180px;
+}
+.section-info_category {
+    @include fonts-setting(700, 18px, $secondaryColor);
+    line-height: 1.3;
+    margin: 0;
+    margin-bottom: 14px;
+
+}
+
+.section-info_block {
+    display: flex;
+    gap: 50px;
+}
+.section-info_block_one {
+    width: 100%;
+}
+.section-info_block_one_title {
+    @include fonts-setting(700, 44px, $blackColor);
+    line-height: 1.3;
+    margin: 0;
+    margin-bottom: 50px;
+
+}
+.section-info_block_one_desc {
+    display: block;
+    @include fonts-setting(500, 18px, $paragraphColor);
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+
+.section-info_block_one_btn {
+    display: block;
+    width: 170px;
+    height: 54px;
+    @include fonts-setting(700, 18px, #fff);
+    border: none;
+    margin-bottom: 50px;
+    background-color: $mainColor;
+}
+
+.section-info_block_two {
+    width: 100%;
+}
+.section-info_block_two_numbers {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 43px;
+}
+.section-info_number-block {
+    margin-bottom: 65px;
+    h3 {
+        margin: 0px;
+        @include fonts-setting(700, 44px, $blackColor);
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+    span {
+        @include fonts-setting(500, 18px, $paragraphColor);
+        line-height: 1.8;
+    }
+}
+
+.section-reviews {
+    min-height: 651px;
+}
+
+.section-reviews_title {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.section-reviews_title_category {
+    @include fonts-setting(700, 18px, $secondaryColor);
+    line-height: 1.3;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.section-reviews_title_name {
+    margin: 0;
+    margin-bottom: 30px;
+    @include fonts-setting(700, 44px, $blackColor)
+}
+.section-reviews_title_desc {
+    @include fonts-setting(500, 18px, $paragraphColor);
+    display: block;
+    line-height: 1.8;
+    max-width: 656px;
+    margin-bottom: 50px;
+}
+
+.section_reviews_cards {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: 180px;
+}
+
+.section_reviews_cards::-webkit-scrollbar {
+    display: none;
+   
+    
+}
+
+
+
+.section-reviews_card {
+    min-width: 545px;
+    min-height: 256px;
+    padding: 24px;
+    background-color: #fff;
+
+}
+
+.section-reviews_icon {
+    color: rgba(64, 180, 166, 1);
+    font-size: 40px;
+    display: block;
+    margin-bottom: 26px;
+}
+
+.section-reviews_desc {
+    display: block;
+    @include fonts-setting(500, 18px, $paragraphColor);
+    line-height: 1.8;
+    margin-bottom: 26px;
+    max-width: 497px;
+
+}
+
+.section-reviews_profile {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    text-align: center;
+}
+.section-reviews_name {
+    display: flex;
+    @include fonts-setting(700, 20px, $blackColor);
+    line-height: 1.3;
+    img {
+        font-size: 50px;
+    }
+    span {
+        margin-left: 14px;
+        display: flex;
+        align-items: center;
+        
+    }
+}
+.section-reviews_rating {
+    
+    display: inline-block;
+    @include fonts-setting(700,18px, $blackColor);
+    line-height: 1.3;
+    i {
+        font-size: 20px;
+        color: $secondaryColor;
+    }
+}
+
 
 
 
