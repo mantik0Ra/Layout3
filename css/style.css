@@ -1,6 +1,7 @@
 body {
   height: 100%;
   font-family: "Poppins", sans-serif;
+  background-color: #F9F9F9;
 }
 
 .container {
@@ -75,11 +76,11 @@ body {
   gap: 24px;
 }
 
-.wrapper .article {
+.article {
   min-height: 1144px;
   width: 100%;
 }
-.wrapper .article .article__title {
+.article .article__title {
   font-weight: 700;
   font-size: 64px;
   color: #151411;
@@ -93,7 +94,7 @@ body {
   line-height: 1.3;
   margin-bottom: 30px;
 }
-.wrapper .article .article__stars {
+.article .article__stars {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,7 +102,7 @@ body {
   top: -86px;
   left: 910px;
 }
-.wrapper .article .article__description {
+.article .article__description {
   font-weight: 500;
   font-size: 18px;
   color: #AFADB5;
@@ -111,12 +112,12 @@ body {
   margin: 0px auto 50px auto;
   line-height: 1.8;
 }
-.wrapper .article .article__arrow {
+.article .article__arrow {
   position: relative;
   left: 105px;
   bottom: 765px;
 }
-.wrapper .article .article__finder {
+.article .article__finder {
   width: 810px;
   color: #fff;
   z-index: 10;
@@ -128,53 +129,54 @@ body {
   -webkit-box-shadow: 0px 4px 80px 0px rgba(175, 173, 181, 0.2);
           box-shadow: 0px 4px 80px 0px rgba(175, 173, 181, 0.2);
 }
-.wrapper .article .article__finder .article__finder_icon {
+.article .article__finder .article__finder_icon {
   height: 32px;
   width: 32px;
   z-index: 3;
   margin: 26px 18px 26px 26px;
   color: #AFADB5;
 }
-.wrapper .article .article__finder .article__finder_input {
+.article .article__finder .article__finder_input {
   height: 32px;
   width: 100%;
   z-index: 5;
+  outline: none;
   margin: 26px 18px 26px 26px;
   color: #AFADB5;
   border: 0;
   line-height: 1.8;
 }
-.wrapper .article .article__finder .article__finder_input::-webkit-input-placeholder {
+.article .article__finder .article__finder_input::-webkit-input-placeholder {
   font-weight: 500;
   font-size: 18px;
   color: #AFADB5;
   font-family: "Poppins", sans-serif;
 }
-.wrapper .article .article__finder .article__finder_input::-moz-placeholder {
+.article .article__finder .article__finder_input::-moz-placeholder {
   font-weight: 500;
   font-size: 18px;
   color: #AFADB5;
   font-family: "Poppins", sans-serif;
 }
-.wrapper .article .article__finder .article__finder_input:-ms-input-placeholder {
+.article .article__finder .article__finder_input:-ms-input-placeholder {
   font-weight: 500;
   font-size: 18px;
   color: #AFADB5;
   font-family: "Poppins", sans-serif;
 }
-.wrapper .article .article__finder .article__finder_input::-ms-input-placeholder {
+.article .article__finder .article__finder_input::-ms-input-placeholder {
   font-weight: 500;
   font-size: 18px;
   color: #AFADB5;
   font-family: "Poppins", sans-serif;
 }
-.wrapper .article .article__finder .article__finder_input::placeholder {
+.article .article__finder .article__finder_input::placeholder {
   font-weight: 500;
   font-size: 18px;
   color: #AFADB5;
   font-family: "Poppins", sans-serif;
 }
-.wrapper .article .article__finder .article__finder_btn {
+.article .article__finder .article__finder_btn {
   width: 170px;
   height: 54px;
   z-index: 5;
@@ -187,7 +189,7 @@ body {
   border: 0;
   cursor: pointer;
 }
-.wrapper .article .article__background {
+.article .article__background {
   max-width: 100%;
   height: 480px;
   position: relative;
@@ -195,10 +197,10 @@ body {
   z-index: -4;
 }
 
-.wrapper .main .section-benefits {
+.section-benefits {
   height: 643px;
 }
-.wrapper .main .section-benefits .section-benefits_small-text {
+.section-benefits .section-benefits_small-text {
   font-weight: 700;
   font-size: 18px;
   color: #FFB23F;
@@ -206,18 +208,19 @@ body {
   display: inline-block;
   margin-bottom: 14px;
 }
-.wrapper .main .section-benefits .section-benefits__title {
+.section-benefits .section-benefits__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.wrapper .main .section-benefits .section-benefits__title .section-benefits__title_h2 {
+.section-benefits .section-benefits__title .section-benefits__title_h2 {
   font-weight: 700;
   font-size: 44px;
   color: #151411;
@@ -231,7 +234,7 @@ body {
           justify-content: flex-start;
   max-width: 456px;
 }
-.wrapper .main .section-benefits .section-benefits__title .section-benefits__title_desc {
+.section-benefits .section-benefits__title .section-benefits__title_desc {
   font-weight: 500;
   font-size: 18px;
   color: #AFADB5;
@@ -244,4 +247,192 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.section-benefits__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 29px;
+  width: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  min-height: 285px;
+  margin-bottom: 180px;
+}
+
+.section-benefits__content_item {
+  height: inherit;
+  width: 100%;
+  background-color: #fff;
+  padding: 26px 24px 6px 24px;
+}
+
+.section-benefits__content_item_img {
+  height: 62px;
+  width: 62px;
+  margin-bottom: 24px;
+}
+
+.section-benefits__content_item_title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #151411;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.3;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.section-benefits__content_item_desc {
+  font-weight: 500;
+  font-size: 18px;
+  color: #AFADB5;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+
+.section-popular {
+  min-height: 939px;
+}
+
+.section-popular_title {
+  margin: auto 0px;
+  text-align: center;
+}
+
+.section-popular_title_category {
+  font-weight: 700;
+  font-size: 18px;
+  color: #FFB23F;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.3;
+}
+
+.section-popular_title_name {
+  font-weight: 700;
+  font-size: 44px;
+  color: #151411;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.3;
+}
+
+.section-popular_title_desc {
+  font-weight: 500;
+  font-size: 18px;
+  color: #AFADB5;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.3;
+  margin: 0px auto;
+  display: block;
+  max-width: 656px;
+  margin-bottom: 50px;
+}
+
+.section-popular_content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 29px;
+}
+
+.section-popular_content_card {
+  width: 100%;
+}
+
+.section-popular_content_card_img {
+  width: 100%;
+  max-height: 360px;
+  margin-bottom: 26px;
+}
+
+.section-popular_content_card_category {
+  font-weight: 700;
+  font-size: 18px;
+  color: #AFADB5;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.3;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.section-popular_content_card_name {
+  font-weight: 700;
+  font-size: 26px;
+  color: #151411;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  line-height: 1.3;
+  margin-bottom: 6px;
+}
+
+.section-popular_content_card_desc {
+  font-weight: 500;
+  font-size: 18px;
+  color: #AFADB5;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.section-popular_content_card_cost {
+  font-weight: 700;
+  font-size: 24px;
+  color: #151411;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.3;
+}
+
+.section-popular_btn {
+  height: 52px;
+  width: 52px;
+  font-size: 24px;
+  color: #fff;
+  background-color: #151411;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+
+.section-popular_btn-right {
+  position: relative;
+  right: 0;
+  left: 1800px;
+  bottom: 300px;
+  cursor: pointer;
+}
+
+.section-popular_btn-left {
+  position: relative;
+  bottom: 300px;
+  cursor: pointer;
+}
+
+.section-popular_btn-left:hover {
+  -webkit-animation: btn 1s forwards linear;
+          animation: btn 1s forwards linear;
+}
+
+.section-popular_btn-right:hover {
+  -webkit-animation: btn 1s forwards linear;
+          animation: btn 1s forwards linear;
+}
+
+@-webkit-keyframes btn {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes btn {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
 }
