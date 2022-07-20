@@ -467,11 +467,7 @@ body {
 
 .section_reviews_cards::-webkit-scrollbar {
     display: none;
-   
-    
 }
-
-
 
 .section-reviews_card {
     min-width: 545px;
@@ -527,6 +523,217 @@ body {
         color: $secondaryColor;
     }
 }
+
+
+// --------------------SECTION_ARTICLES-----------------------
+
+.section-articles {
+    max-height: 1035px;
+    width: 100%;
+    margin-bottom: 180px;
+}
+
+.section-articles_category {
+    @include fonts-setting(700, 18px, $secondaryColor);
+    line-height: 1.3;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.section-articles_wrapper {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
+
+.section-articles_main {
+    max-height: 788px;
+}
+
+.section-articles_main_title {
+    @include fonts-setting(700, 44px, $blackColor);
+    line-height: 1.3;
+    margin: 0;
+    max-width: 544px;
+    margin-bottom: 30px;
+
+}
+
+.section-articles_main_desc {
+    @include fonts-setting(500, 18px, $paragraphColor);
+    line-height: 1.8;
+    display: block;
+    margin-bottom: 50px;
+    max-width: 544px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.section-articles_img-block {
+    background-image: url(../img/section-articles_main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(21, 20, 17, 0);
+    background-position: center;
+    position: relative;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    box-sizing: border-box;
+    min-width: 582px;
+    min-height: 565px;
+    
+
+}
+
+.img-block_category {
+    display: block;
+    @include fonts-setting(500, 18px, #fff);
+    line-height: 1.8;
+    margin-bottom: 10px;
+
+}
+
+.img-block_title {
+    margin: 0;
+    padding: 0;
+    @include fonts-setting(700, 26px, #fff);
+    line-height: 1.3;
+    margin-bottom: 6px;
+}
+.img-block_desc {
+    display: block;
+    max-width: 530px;
+    max-height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    @include fonts-setting(500, 18px, #fff);
+    line-height: 1.8;
+    margin-bottom: 14px;
+
+}
+
+.img-block_url {
+    display: block;
+    text-decoration: none;
+    @include fonts-setting(500, 18px, #fff);
+    line-height: 1.8;
+
+}
+
+.section-articles_main_btn {
+    height: 65px;
+    width: 65px;
+    background-color: #fff;
+    font-size: 28px;
+    color: $mainColor;
+    border: none;
+}
+
+.main_btn-left {
+    position: absolute;
+    right: 65px;
+    bottom: -45px;
+    cursor: pointer;
+    
+}
+
+.main_btn-right {
+    background-color: $mainColor;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+    cursor: pointer;
+}
+
+.section-articles_aside {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-articles_aside-card {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    max-width: 620px;
+    max-height: 260px;
+    gap: 26px;
+}
+
+.aside-card_img {
+    min-width: 260px;
+    min-height: 260px;
+}
+
+.aside-card_info {
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+.aside-card_info_category {
+    display: block;
+    margin-top: 25px;
+    @include fonts-setting(500, 18px, $paragraphColor);
+    line-height: 1.8;
+    margin-bottom: 21px;
+}
+
+.aside-card_info_title {
+    margin: 0;
+    padding: 0;
+    @include fonts-setting(700, 24px, $blackColor);
+    line-height: 1.3;
+    margin-bottom: 14px;
+}
+
+.aside-card_info_desc {
+    display: block;
+    max-width: 318px;
+    max-height: 32px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    @include fonts-setting(500, 18px, $paragraphColor);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.aside-card_info_account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info_acc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.info_acc_img {
+    height: 28px;
+    width: 28px;
+}
+.info_acc_span {
+    display: block;
+    margin-left: 10px;
+    @include fonts-setting(700, 14px, $blackColor);
+    line-height: 1.3;
+
+}
+
+.info_date {
+    @include fonts-setting(500, 14px, $paragraphColor);
+    line-height: 1.3;
+
+}
+
 
 
 
