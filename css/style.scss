@@ -75,6 +75,8 @@ body {
 }
 
 
+
+
 .article {
     min-height: 1144px;
     width: 100%;
@@ -169,6 +171,16 @@ body {
 }
 
 
+@media screen and (max-width: 1150px) {
+    .article__arrow {
+        visibility: collapse;
+    }
+    .article__stars {
+        visibility: collapse;
+    }
+
+}
+
 
 .section-benefits {
     height: 643px;
@@ -234,6 +246,7 @@ body {
     margin: 0;
     margin-bottom: 20px;
 }
+
 .section-benefits__content_item_desc {
     @include fonts-setting(500, 18px, $paragraphColor);
     line-height: 1.8;
@@ -248,6 +261,7 @@ body {
     margin: auto 0px;
     text-align: center;
 }
+
 .section-popular_title_category {
     @include fonts-setting(700, 18px, $secondaryColor);
     line-height: 1.3;
@@ -257,7 +271,7 @@ body {
 .section-popular_title_name {
     @include fonts-setting(700, 44px, $blackColor);
     line-height: 1.3;
-    
+
 }
 
 .section-popular_title_desc {
@@ -267,7 +281,7 @@ body {
     display: block;
     max-width: 656px;
     margin-bottom: 50px;
-    
+
 }
 
 .section-popular_content {
@@ -277,11 +291,12 @@ body {
     margin-bottom: 180px;
 
 }
+
 .section-popular_content_card {
     width: 100%;
     position: relative;
-    
-    
+
+
 }
 
 .section-popular_content_card_img {
@@ -316,6 +331,7 @@ body {
     @include fonts-setting(700, 24px, $blackColor);
     line-height: 1.3;
 }
+
 .section-popular_btn {
     height: 52px;
     width: 52px;
@@ -324,7 +340,7 @@ body {
     background-color: #151411;
     opacity: 0.6;
     border-radius: 50%;
-    
+
 }
 
 .section-popular_btn-left-absolute {
@@ -332,7 +348,7 @@ body {
     left: 55px;
     bottom: inherit;
     top: 248px;
-    
+
 }
 
 .section-popular_btn-right-absolute {
@@ -340,7 +356,7 @@ body {
     right: 52px;
     bottom: inherit;
     top: 248px;
-    
+
 }
 
 .section-popular_btn:hover {
@@ -352,6 +368,7 @@ body {
     from {
         opacity: 0.6;
     }
+
     to {
         opacity: 1;
     }
@@ -363,6 +380,7 @@ body {
     max-height: 864px;
     margin-bottom: 180px;
 }
+
 .section-info_category {
     @include fonts-setting(700, 18px, $secondaryColor);
     line-height: 1.3;
@@ -375,9 +393,11 @@ body {
     display: flex;
     gap: 50px;
 }
+
 .section-info_block_one {
     width: 100%;
 }
+
 .section-info_block_one_title {
     @include fonts-setting(700, 44px, $blackColor);
     line-height: 1.3;
@@ -385,6 +405,7 @@ body {
     margin-bottom: 50px;
 
 }
+
 .section-info_block_one_desc {
     display: block;
     @include fonts-setting(500, 18px, $paragraphColor);
@@ -405,20 +426,24 @@ body {
 .section-info_block_two {
     width: 100%;
 }
+
 .section-info_block_two_numbers {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 43px;
 }
+
 .section-info_number-block {
     margin-bottom: 65px;
+
     h3 {
         margin: 0px;
         @include fonts-setting(700, 44px, $blackColor);
         line-height: 1.3;
         margin-bottom: 10px;
     }
+
     span {
         @include fonts-setting(500, 18px, $paragraphColor);
         line-height: 1.8;
@@ -437,6 +462,7 @@ body {
     text-align: center;
     align-items: center;
 }
+
 .section-reviews_title_category {
     @include fonts-setting(700, 18px, $secondaryColor);
     line-height: 1.3;
@@ -449,6 +475,7 @@ body {
     margin-bottom: 30px;
     @include fonts-setting(700, 44px, $blackColor)
 }
+
 .section-reviews_title_desc {
     @include fonts-setting(500, 18px, $paragraphColor);
     display: block;
@@ -496,28 +523,33 @@ body {
 .section-reviews_profile {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     text-align: center;
 }
+
 .section-reviews_name {
     display: flex;
     @include fonts-setting(700, 20px, $blackColor);
     line-height: 1.3;
+
     img {
         font-size: 50px;
     }
+
     span {
         margin-left: 14px;
         display: flex;
         align-items: center;
-        
+
     }
 }
+
 .section-reviews_rating {
-    
+
     display: inline-block;
-    @include fonts-setting(700,18px, $blackColor);
+    @include fonts-setting(700, 18px, $blackColor);
     line-height: 1.3;
+
     i {
         font-size: 20px;
         color: $secondaryColor;
@@ -583,7 +615,7 @@ body {
     box-sizing: border-box;
     min-width: 582px;
     min-height: 565px;
-    
+
 
 }
 
@@ -602,6 +634,7 @@ body {
     line-height: 1.3;
     margin-bottom: 6px;
 }
+
 .img-block_desc {
     display: block;
     max-width: 530px;
@@ -637,7 +670,7 @@ body {
     right: 65px;
     bottom: -45px;
     cursor: pointer;
-    
+
 }
 
 .main_btn-right {
@@ -672,8 +705,8 @@ body {
 .aside-card_info {
     width: 100%;
     height: 100%;
-    
-    
+
+
 }
 
 .aside-card_info_category {
@@ -716,10 +749,12 @@ body {
     align-items: center;
     text-align: center;
 }
+
 .info_acc_img {
     height: 28px;
     width: 28px;
 }
+
 .info_acc_span {
     display: block;
     margin-left: 10px;
@@ -734,7 +769,123 @@ body {
 
 }
 
+// ------------SECTION_LINK--------------------------------------
+
+.section-link {
+    max-height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 86px;
+
+
+}
+
+.section-link_main {
+    @include fonts-setting(700, 44px, $blackColor);
+    line-height: 1.3;
+
+}
+
+.section-link_url {
+    height: 50px;
+    width: 200px;
+    display: flex;
+    background-color: $mainColor;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.section-link_url-text {
+    @include fonts-setting(700, 18px, #fff);
+    line-height: 1.3;
+    display: block;
+    margin-right: 18px;
+}
+
+.section-link_url_icon {
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    
+}
+
+.footer {
+    min-height: 290px;
+    border-top: $line_color 2px solid;
+    margin-bottom: 80px;
+    display: flex;
+}
+
+.footer_logo {
+    width: 100%;
+}
+
+.footer_logo_img {
+    font-size: 42px;
+    margin-bottom: 36px;
+    margin-top: 86px;
+    display: block;
+}
+
+.footer_logo_desc {
+    display: block;
+    @include fonts-setting(500, 18px, $blackColor);
+    line-height: 1.8;
+    max-width: 505px;
+
+}
+
+.footer_info {
+    width: 100%;
+    display: flex;
+    gap: 75px;
+    justify-content: end;
+    margin-top: 80px;
+    
+    
+}
+.footer_info_ul {
+    list-style-type: none;
+    @include fonts-setting(500, 18px, $blackColor);
+    line-height: 1.8;
+    cursor: pointer;
+    li {
+        margin-bottom: 15px;
+    }
+    li:hover {
+        animation: footer linear 2s infinite;
+    }
+    
+}
 
 
 
+.footer_info_ul::first-line  {
+    @include fonts-setting(700, 20px, $blackColor);
+    line-height: 1.3;
+    
 
+}
+
+@keyframes footer {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
