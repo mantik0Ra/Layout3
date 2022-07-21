@@ -710,6 +710,46 @@ body {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .section-reviews_title_name {
+        @include fonts-setting(700, 32px, $blackColor)
+    }
+    .section-reviews_title_category {
+        @include fonts-setting(700, 12px, $secondaryColor);
+    }
+    .section-reviews_title_desc {
+        @include fonts-setting(500, 14px, $paragraphColor);
+    }
+    .section_reviews_cards {
+        flex-direction: column;
+        max-width: 100%;
+        overflow: scroll;
+    }
+
+    .section-reviews_profile {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .section-reviews_desc {
+        max-width: 400px;
+        
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+    .section-reviews_desc {
+        max-width: 300px;
+        
+    }
+
+    .section-reviews_name {
+        @include fonts-setting(700, 14px, $blackColor);
+        
+    }
+}
+
 
 // --------------------SECTION_ARTICLES-----------------------
 
