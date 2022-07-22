@@ -426,6 +426,7 @@ body {
 .section-popular_content_card {
   width: 100%;
   position: relative;
+  cursor: pointer;
 }
 
 .section-popular_btn-left-absolute-none {
@@ -622,6 +623,7 @@ body {
 .section-info_block_one_btn {
   display: block;
   width: 170px;
+  cursor: pointer;
   height: 54px;
   font-weight: 700;
   font-size: 18px;
@@ -985,6 +987,7 @@ body {
   background-color: rgba(21, 20, 17, 0);
   background-position: center;
   position: relative;
+  cursor: pointer;
   padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1089,6 +1092,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
+  cursor: pointer;
   padding: 0;
   max-width: 620px;
   max-height: 260px;
